@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&family=Source+Code+Pro:wght@300&display=swap');  
+
+*{
+    margin: 0;
+    padding: 0;
+    margin-left: 0%;
+}
+
+.r{
+    font-family: 'Roboto Slab', serif;
+}
+
+.s{
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 700;
+}
+
+.contaner{
+    display: flex;
+    
+}
+
+.sidebar{
+    position: absolute;
+    width:250px;
+    background-color: rgb(161, 154, 154);
+    font-family: 'Roboto Slab', serif;
+    height: 100vh;
+    transition: transform 0.3s ease-in;
+    display: none;
+
+}
+
+.sidebar nav{
+    padding: 40px;
+}
+
+.sidebar nav li{
+    list-style: none;
+    font-size: 20px;
+    padding: 20px 0 ;
+} 
+
+.sidebar nav li a{
+   text-decoration: none;
+   color: black;
+} 
+
+.main{
+    width: 90vw;
+    /*background-color: yellow;*/
+}
+
+.infoContainer{
+
+    width: 80vw;
+    height: 58vh;
+    margin: 144px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.devinfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.infotext{
+    font-size: 65px;
+    
+}
+
+.name{
+    font-size: 40px;
+    font-weight: bold;  
+    font-family: 'Roboto Slab', serif;
+}
+
+.about{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.moreabout{
+    margin-top: 5px;
+    font-size: 22px;
+}
+
+.button{
+    margin-top:25px;
+}
+.btn{
+   padding: 9px 14px;
+   border-radius: 22px;
+   border-color: black;
+   color: white;
+   font-size: 21px;
+   font-weight: bold;
+   background-color: rgb(72, 92, 171);
+   margin: 0 3px;
+   cursor: pointer;
+}
+
+.btn:hover{
+    background-color: white;
+    color: rgb(72, 92, 171);
+    border-color: black;
+}
+
+.infopic img{
+    height: 58vh; 
+    border-radius: 15px; 
+}
+
+
+.contectform{
+    margin-left: 50px;
+    padding-top: 144px;
+    padding: 0 34px;
+    font-family: 'Source Code Pro', monospace; 
+    font-weight: 800;
+}
+
+.contectform h1{
+    padding: 12px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.contectform form div{
+    padding: 20px 0 ;
+    display: flex;
+    flex-direction: column;
+}
+
+.contectform form div input {
+    width: 26vw;
+    border-radius: 5px;
+    margin: 6px 0 0 0;
+    padding: 3px;
+}
+
+
+
+#emailHelp{
+    font-size: 20px;
+    color: blue;
+    margin: 0 5px;
+}
+
+
+#form-check{
+    flex-direction: row;
+}
+
+#form-check input{
+    width:24px; 
+    margin: 3px 0;
+} 
+
+.project{
+    margin-left: 50px;
+    background-color: white;
+    height: 100%vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.project h1{
+    color: black;
+    padding: 12px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.projectitem{
+    margin: 10px 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.projectitem h2{
+    color: black;
+    font-family: 'Source Code Pro', monospace;
+    padding: 10px; 
+}
+
+.projectitem p{
+    color:rgb(77, 36, 173);
+    font-weight: 300;
+    padding: 20px;
+}
+
+.project button{
+    width: 20vw;
+}
+
+.aboutme{
+    margin-left: 50px;
+    display:  flex;
+    flex-direction: column;
+    padding-top :20px;
+    margin: 20px 30px;
+    
+}
+
+.aboutme h1{
+
+    color: black;
+    font-family: 'Roboto Slab', serif;
+}
+
+.l{
+    margin-left: 30px;
+}
+
+.slidbargo{
+    transform: translate(-443px,0px);
+    position: absolute;
+}
+
+.hamburger{
+    position: absolute;
+    cursor: pointer;
+    top:10px;
+    left: 10px;
+}
+
+.ham{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.cross{
+    margin-left: 190px;
+    margin-top: 10px;
+}
+
+@media (max-width:1000px) {
+    .infopic{
+        display: none ;
+    }
+}
